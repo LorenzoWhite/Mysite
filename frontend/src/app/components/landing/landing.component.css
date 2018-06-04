@@ -83,3 +83,7 @@ li:first-child{
 .accent-colored {
   background-color: #FF730F;   
 }
+
+.content {
+    padding: 1.5em;
+}
