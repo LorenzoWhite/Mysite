@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
   name: string = "Lorenzo White";
+  skills: string[] = ["Web Developer", "Filmmaker", "Designer"];
 
   //TODO add elements that define my skillset so they're not hardcoded into HTML
 

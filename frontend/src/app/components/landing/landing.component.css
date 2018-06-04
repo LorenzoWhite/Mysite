@@ -1,5 +1,5 @@
 .no-pad {
-    padding:0;    
+    padding:0;
 }
 
 .main-head-picture::after {
@@ -39,6 +39,13 @@
     width: 20rem;
 }
 
+.intro-content{
+  font-size: .8rem;
+}
+
+.accent {
+  color: #FF730F;
+}
 .name-main {
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
@@ -48,7 +55,7 @@
 
 .skills {
     font-family: 'Lato', sans-serif;
-    font-weight: 200; 
+    font-weight: 200;
     font-size: .85rem;
     list-style-type: disc;
     padding: 0;
@@ -71,4 +78,8 @@ li:first-child{
 .head-container {
     /* background-color: blue; */
     margin-left: 4em;
+}
+
+.accent-colored {
+  background-color: #FF730F;   
 }
