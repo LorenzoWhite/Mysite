@@ -1,3 +1,6 @@
+$accent-color: #FF730F;
+$background-color: #FAFAFA;
+
 .no-pad {
     padding:0;
 }
@@ -43,9 +46,6 @@
   font-size: .8rem;
 }
 
-.accent {
-  color: #FF730F;
-}
 .name-main {
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
@@ -80,10 +80,11 @@ li:first-child{
     margin-left: 4em;
 }
 
-.accent-colored {
-  background-color: #FF730F;   
-}
 
 .content {
     padding: 1.5em;
+}
+
+.is-accented {
+  color: $accent-color;
 }
