@@ -93,5 +93,5 @@ li:first-child{
 }
 
 .mixin-test {
-    @include responsive-font(1vw, 1rem, 1.5rem, 50px);
+  @include responsive-font(1vw, 10px, 14px, false);
 }
