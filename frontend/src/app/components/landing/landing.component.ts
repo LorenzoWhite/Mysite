@@ -6,14 +6,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-sass/landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  name: string = "Lorenzo White";
-  skills: string[] = ["Web Developer", "Filmmaker", "Designer"];
+  name: string = "Lorenzo White" 
 
-  //TODO add elements that define my skillset so they're not hardcoded into HTML
-
-  constructor() { }
+  myStyle: object = {};
+  myParams: object = {};
+  width: number = 100;
+  height: number = 100;
 
   ngOnInit() {
+    this.myParams = {
+      particles: {
+        number: {
+          value: 40,
+          },
+        color: {
+          value: 'FF7C1E'
+              },
+        shape: {
+          type: 'circle'
+              },
+        move: {
+          speed: 1
+        },
+        size: {
+          value: 5
+        },
+        opacity: {
+          value: 1
+        },
+        line_linked: {
+          color: "#2D2D2D"
+        }
+      }
+  };
   }
-
 }

@@ -1,8 +1,11 @@
 @import 'mixins';
 
 //colors
-$accent-color: hsl(25, 94%, 53%);
-$background-color: hsl(0, 0%, 98%);
+$brand: #FF7C1E; 
+$offwhite: hsl(0, 0%, 98%);
+$low-contrast: hsl(0, 0%, 89%);
+$high-contrast: hsl(0, 0%, 30%);
+$offblack: hsl(0, 0%, 18%);
 
 .no-pad {
     padding:0;
@@ -46,20 +49,20 @@ $background-color: hsl(0, 0%, 98%);
 }
 
 .intro-content{
-  font-size: .8rem;
+    @include responsive-font(.8rem, 10px, false, false);
 }
 
 .name-main {
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
     font-weight: bold;
-    color: #707070;
+    color: $high-contrast;
 }
 
 .skills {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
-    font-size: .85rem;
+    @include responsive-font(.85rem, 10px, false, false);
     list-style-type: disc;
     padding: 0;
     width: 70%;
@@ -72,6 +75,7 @@ $background-color: hsl(0, 0%, 98%);
 .intro-text {
     font-weight: 500;
     font-size: 1.25rem;
+    @include responsive-font(1.25rem, 16px, false, false);
 }
 
 li:first-child{
@@ -89,9 +93,43 @@ li:first-child{
 }
 
 .is-accented {
-  color: $accent-color;
+  color: $brand;
 }
 
+
+//this is the body in the description of my skills. Too lazy to change rn
 .mixin-test {
-  @include responsive-font(1vw, 10px, 14px, false);
+  @include responsive-font(1rem, 10px, 14px, false);
+}
+
+.contrast-background {
+    background-color: $brand;
+}
+
+.branded {
+    color: $brand;
+}
+
+.high-contrast {
+    color: $high-contrast;
+}
+
+.high-contrast-background {
+    background-color: $high-contrast;
+}
+
+.test {
+    height: 1vh;
+    width: 100%;
+}
+
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

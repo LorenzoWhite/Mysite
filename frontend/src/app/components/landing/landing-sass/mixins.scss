@@ -1,6 +1,4 @@
-//media queries and junk
-
-// Define the breakpoints
+//responsive font resizing 
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
     $responsive-unitless: $responsive / ($responsive - $responsive + 1);
     $dimension: if(unit($responsive) == 'vh', 'height', 'width');
