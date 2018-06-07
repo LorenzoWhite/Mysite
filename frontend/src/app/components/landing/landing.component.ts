@@ -6,12 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-sass/landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  name: string = "Lorenzo White" 
+  name: string = "Lorenzo White"
 
   myStyle: object = {};
   myParams: object = {};
-  width: number = 100;
-  height: number = 100;
 
   ngOnInit() {
     this.myParams = {

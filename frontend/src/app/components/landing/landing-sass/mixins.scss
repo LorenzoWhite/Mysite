@@ -1,24 +1,44 @@
-//responsive font resizing 
+//responsive font resizing
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
     $responsive-unitless: $responsive / ($responsive - $responsive + 1);
     $dimension: if(unit($responsive) == 'vh', 'height', 'width');
     $min-breakpoint: $min / $responsive-unitless * 100;
-    
+
     @media (max-#{$dimension}: #{$min-breakpoint}) {
       font-size: $min;
     }
-    
+
     @if $max {
       $max-breakpoint: $max / $responsive-unitless * 100;
-      
+
       @media (min-#{$dimension}: #{$max-breakpoint}) {
         font-size: $max;
       }
     }
-    
+
     @if $fallback {
       font-size: $fallback;
     }
-    
+
     font-size: $responsive;
   }
+
+//animations
+//@author Levi Neuland - https://codepen.io/levineuland/pen/AmwCL
+.animated {
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rubberBand {
+  0% {transform: scale(1);}
+  8% {transform: scaleX(1.25) scaleY(0.75);}
+  13% {transform: scaleX(0.75) scaleY(1.25);}
+  18% {transform: scaleX(1.15) scaleY(0.85);}
+  27% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+.rubberBand {
+  animation-name: rubberBand;
+}

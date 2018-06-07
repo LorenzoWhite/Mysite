@@ -1,14 +1,19 @@
 @import 'mixins';
 
 //colors
-$brand: #FF7C1E; 
+$brand: #FF7C1E;
 $offwhite: hsl(0, 0%, 98%);
 $low-contrast: hsl(0, 0%, 89%);
 $high-contrast: hsl(0, 0%, 30%);
 $offblack: hsl(0, 0%, 18%);
 
 .no-pad {
-    padding:0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.skill-item {
+  box-shadow: 15px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
 .main-head-picture::after {
@@ -49,7 +54,7 @@ $offblack: hsl(0, 0%, 18%);
 }
 
 .intro-content{
-    @include responsive-font(.8rem, 10px, false, false);
+    @include responsive-font(1rem, 10px, false, false);
 }
 
 .name-main {
@@ -75,7 +80,7 @@ $offblack: hsl(0, 0%, 18%);
 .intro-text {
     font-weight: 500;
     font-size: 1.25rem;
-    @include responsive-font(1.25rem, 16px, false, false);
+    @include responsive-font(1.4rem, 16px, false, false);
 }
 
 li:first-child{
@@ -135,5 +140,9 @@ li:first-child{
 }
 
 .box-head {
-    font-weight: 100;
+    font-weight: 200;
+}
+
+.skill-column {
+  padding: 4em;
 }
