@@ -71,6 +71,11 @@ $offblack: hsl(0, 0%, 18%);
     list-style-type: disc;
     padding: 0;
     width: 70%;
+
+    li:first-child{
+        list-style: none;
+    }
+
 }
 
 .info {
@@ -83,9 +88,6 @@ $offblack: hsl(0, 0%, 18%);
     @include responsive-font(1.4rem, 16px, false, false);
 }
 
-li:first-child{
-    list-style: none
-}
 
 .head-container {
     /* background-color: blue; */
@@ -145,4 +147,21 @@ li:first-child{
 
 .skill-column {
   padding: 4em;
+}
+
+.badges {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 25%;
+  left: 5%
+}
+
+.badge {
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+  padding: 0;
+  margin-left: .7em;
+  margin-right: .7em;
 }
