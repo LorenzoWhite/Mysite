@@ -7,6 +7,10 @@ $low-contrast: hsl(0, 0%, 89%);
 $high-contrast: hsl(0, 0%, 30%);
 $offblack: hsl(0, 0%, 18%);
 
+//bulma color updates
+$button-color: $brand;
+$button-hover-color: $brand;
+
 .no-pad {
     padding: 0;
     border-radius: 0;
@@ -79,7 +83,7 @@ $offblack: hsl(0, 0%, 18%);
 }
 
 .info {
-    background-image: url("assets/images/geometry.png");
+    background-image: url("/assets/images/geometry.png");
 }
 
 .intro-text {
@@ -164,4 +168,22 @@ $offblack: hsl(0, 0%, 18%);
   padding: 0;
   margin-left: .7em;
   margin-right: .7em;
+
+  &:hover {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+}
+
+.branded-button {
+  position: relative;
+  top: 3em;
+  border-color: $brand;
+  color: $brand;
+
+  &:hover {
+    color: $offwhite;
+    background-color: $brand;
+  }
 }

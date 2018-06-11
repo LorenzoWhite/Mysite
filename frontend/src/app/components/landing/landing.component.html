@@ -31,13 +31,14 @@
               Wanna know more about me? Just keep scrolling!
 
           </p>
+          <button class="button is-outlined branded-button" type="button" name="button">Contact</button>
         </div>
       </section>
     </div>
   </div>
 </div>
 
-<section class="section web-dev">
+<section detect-scroll (onScroll)="handleScroll($event)" class="section web-dev">
   <div class="skill-item">
     <div class="hero high-contrast-background">
       <div class="hero-body">
@@ -58,15 +59,65 @@
         </div>
         <div class="column is-half">
           <div class="badges">
+            <img class="badge swing" src="assets/svgs/angular.svg"/><img class="badge swing"src="assets/svgs/css.svg"/><img class="badge swing"src="assets/svgs/html.svg" alt=""><img class="badge swing"src="assets/svgs/mongo.svg" alt=""><img class="badge swing" src="assets/svgs/node.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section Filmmaker">
+  <div class="skill-item">
+    <div class="hero high-contrast-background">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title branded box-head animated rubberBand">
+              I'm a Filmmaker!
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="columns skill-column">
+        <div class="column is-half">
+          <div class="content">
+            <p class="mixin-test">
+              An interest in the Raspberry Pi introduced me to programming with Python which introduced me to web development with Django. I’ve been making websites ever since. Most recently, I’ve taken up blockchain development in the form of Ethereum DApp and smart contract development.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="badges">
             <img class="badge" src="assets/svgs/angular.svg"/><img class="badge"src="assets/svgs/css.svg"/><img class="badge"src="assets/svgs/html.svg" alt=""><img class="badge"src="assets/svgs/mongo.svg" alt=""><img class="badge" src="assets/svgs/node.svg" alt="">
           </div>
         </div>
       </div>
     </div>
 </section>
-<!-- <section class="filmmaker">
-  <h1>I'm a filmmaker</h1>
+
+<section class="section designer">
+  <div class="skill-item">
+    <div class="hero high-contrast-background">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title branded box-head animated rubberBand">
+              I'm a designer!
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="columns skill-column">
+        <div class="column is-half">
+          <div class="content">
+            <p class="mixin-test">
+              An interest in the Raspberry Pi introduced me to programming with Python which introduced me to web development with Django. I’ve been making websites ever since. Most recently, I’ve taken up blockchain development in the form of Ethereum DApp and smart contract development.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="badges">
+            <img class="badge" src="assets/svgs/angular.svg"/><img class="badge"src="assets/svgs/css.svg"/><img class="badge"src="assets/svgs/html.svg" alt=""><img class="badge"src="assets/svgs/mongo.svg" alt=""><img class="badge" src="assets/svgs/node.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
-<section class="designer">
-  <h1>I'm a designer!</h1>
-</section> -->
