@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ParticlesModule } from 'angular-particle';
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { NgsRevealModule } from 'ng-scrollreveal';
 
 import { AppComponent } from './app.component';
@@ -28,7 +27,6 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     ParticlesModule,
-    AnimateOnScrollModule.forRoot(),
     NgsRevealModule.forRoot()
   ],
   providers: [],
