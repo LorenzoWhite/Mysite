@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ScrollEvent } from 'ngx-scroll-event';
+import { Component, OnInit, HostListener } from '@angular/core';
+import {NgsRevealConfig} from 'ng-scrollreveal';
+
 
 @Component({
   selector: 'app-landing',
@@ -7,6 +8,11 @@ import { ScrollEvent } from 'ngx-scroll-event';
   styleUrls: ['./landing-sass/landing.component.scss']
 })
 export class LandingComponent implements OnInit {
+  constructor(config: NgsRevealConfig) {
+    config.duration = 1000;
+    config.viewFactor = 0.3;
+    config.easing = "ease"
+  }
   //Setup for skill description
   name: string = "Lorenzo White";
   // TODO: turn skills into a class to bind descriptions to titles
@@ -15,20 +21,15 @@ export class LandingComponent implements OnInit {
   //setup for scroll events
   hasScrolled: boolean;
 
-  public handleScroll(event: ScrollEvent) {
-    //console.log('scroll occurred', event.originalEvent);
-    if (event.isReachingBottom) {
-      console.log(`the user is reaching the bottom`);
-      //hasScrolled = true;
-    }
-    if (event.isReachingTop) {
-      console.log(`the user is reaching the top`);
-    }
-  }
 
   //setup for particle effects
   myStyle: object = {};
   myParams: object = {};
+
+  @HostListener('window:scroll', ['$event']) onScrollEvent($event){
+    console.log(window.scrollY);
+  }
+
 
   ngOnInit() {
     this.myParams = {

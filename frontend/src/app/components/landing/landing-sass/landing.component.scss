@@ -1,4 +1,5 @@
 @import 'mixins';
+@import 'animate';
 
 //colors
 $brand: #FF7C1E;
@@ -147,6 +148,10 @@ $button-hover-color: $brand;
 
 .box-head {
     font-weight: 200;
+
+    &:hover {
+      @extend .animated;
+    }
 }
 
 .skill-column {
@@ -186,4 +191,17 @@ $button-hover-color: $brand;
     color: $offwhite;
     background-color: $brand;
   }
+}
+
+// .animated {
+//     visibility: visible !important;
+// }
+
+.hide-on-init {
+    visibility: hidden;
+    animation-duration: 2s;
+}
+
+.animated {
+    visibility: visible !important;
 }
