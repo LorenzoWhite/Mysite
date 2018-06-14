@@ -163,7 +163,11 @@ $button-hover-color: $brand;
   text-align: center;
   position: relative;
   top: 25%;
-  left: 5%
+  left: 5%;
+
+  .film {
+    //left: 50%;
+  }
 }
 
 .badge {
