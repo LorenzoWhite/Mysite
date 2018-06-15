@@ -83,7 +83,7 @@ $button-hover-color: $brand;
 
 .name-main {
     font-family: 'Lato', sans-serif;
-    font-size: 3rem;
+    @include responsive-font(3rem, 28px, false, false);
     font-weight: bold;
     color: $high-contrast;
 }
@@ -91,7 +91,7 @@ $button-hover-color: $brand;
 .skills {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
-    @include responsive-font(.85rem, 10px, false, false);
+    @include responsive-font(.85rem, 7px, false, false);
     list-style-type: disc;
     padding: 0;
     width: 20%;
@@ -157,7 +157,7 @@ $button-hover-color: $brand;
 .particles {
     position: absolute;
     width: 100%;
-    height: 1000px;
+    height: 100%;
     z-index: 0;
     top: 0;
     left: 0;
