@@ -45,17 +45,36 @@ $button-hover-color: $brand;
 }
 
 .contstuff {
-    position: absolute;
+    //position: absolute;
 }
 
 .name-content {
-    position: absolute;
+    //position: absolute;
+    position: relative;
     top: 60%;
     color: black;
 }
 
 .cont-box {
     width: 20rem;
+}
+
+@media (max-width: 768px) {
+  .cont-box {
+    width: 80%;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .badges {
+    margin-top: 2em;
+  }
+
+  .skill-description {
+    @include responsive-font(1rem, 12px, 16px, false)
+  }
 }
 
 .intro-content{
@@ -75,7 +94,7 @@ $button-hover-color: $brand;
     @include responsive-font(.85rem, 10px, false, false);
     list-style-type: disc;
     padding: 0;
-    width: 70%;
+    width: 20%;
 
     li:first-child{
         list-style: none;
@@ -110,8 +129,8 @@ $button-hover-color: $brand;
 
 
 //this is the body in the description of my skills. Too lazy to change rn
-.mixin-test {
-  @include responsive-font(1rem, 10px, 14px, false);
+.skill-description {
+  @include responsive-font(.85rem, 8px, 28px, false);
 }
 
 .contrast-background {
@@ -159,15 +178,9 @@ $button-hover-color: $brand;
 }
 
 .badges {
-  margin: auto;
   text-align: center;
   position: relative;
   top: 25%;
-  left: 5%;
-
-  .film {
-    //left: 50%;
-  }
 }
 
 .badge {
@@ -196,10 +209,6 @@ $button-hover-color: $brand;
     background-color: $brand;
   }
 }
-
-// .animated {
-//     visibility: visible !important;
-// }
 
 .hide-on-init {
     visibility: hidden;
