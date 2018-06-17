@@ -12,7 +12,8 @@ import { FooterComponent } from './components/footer/footer.component';
 //import components for router, may move to separate module if routing becomes too much
 const appRoutes: Routes = [
   {path: 'home', component: LandingComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'contact', component: ContactComponent}
 ]
 
 

@@ -75,6 +75,41 @@ $button-hover-color: $brand;
   .skill-description {
     @include responsive-font(1rem, 12px, 16px, false)
   }
+
+  .branded-button {
+    width: 30%;
+  }
+
+  .info {
+    margin: auto;
+    text-align: center;
+  }
+
+  .cont-box {
+    width: 70%;
+    margin:auto;
+    position: relative;
+    right: 2em;
+  }
+
+  .head-container {
+    margin-left: 4em;
+  }
+
+  .skills {
+    margin: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .name-container {
+    height: auto;
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+  .name-main {
+    //top:
+  }
 }
 
 .intro-content{
@@ -203,6 +238,7 @@ $button-hover-color: $brand;
   top: 3em;
   border-color: $brand;
   color: $brand;
+  margin-bottom: 10em;
 
   &:hover {
     color: $offwhite;

@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import {NgsRevealConfig} from 'ng-scrollreveal';
+import { NgsRevealConfig } from 'ng-scrollreveal';
 
 
 @Component({
@@ -15,20 +15,14 @@ export class LandingComponent implements OnInit {
   }
   //Setup for skill description
   name: string = "Lorenzo White";
+
   // TODO: turn skills into a class to bind descriptions to titles
   skills: string[] = ["Web Developer", "Filmmaker", "Designer"];
-
-  //setup for scroll events
-  hasScrolled: boolean;
-
 
   //setup for particle effects
   myStyle: object = {};
   myParams: object = {};
 
-  @HostListener('window:scroll', ['$event']) onScrollEvent($event){
-    console.log(window.scrollY);
-  }
 
 
   ngOnInit() {
