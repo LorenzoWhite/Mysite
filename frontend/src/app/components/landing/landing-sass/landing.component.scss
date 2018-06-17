@@ -59,83 +59,7 @@ $button-hover-color: $brand;
     width: 20rem;
 }
 
-@media (max-width: 768px) {
-  .cont-box {
-    width: 80%;
-  }
 
-  .image {
-    display: none;
-  }
-
-  .badges {
-    margin-top: 2em;
-  }
-
-  .skill-description {
-    @include responsive-font(1rem, 12px, 16px, false)
-  }
-
-  .branded-button {
-    width: 30%;
-  }
-
-  .info {
-    margin: auto;
-    text-align: center;
-  }
-
-  .cont-box {
-    width: 70%;
-    margin:auto;
-    position: relative;
-    right: 2em;
-  }
-
-  .head-container {
-    margin-left: 4em;
-  }
-
-  .skills {
-    margin: auto;
-  }
-}
-
-@media (max-width: 425px) {
-  .name-container {
-    height: auto;
-    margin-top: 10em;
-    margin-bottom: 10em;
-  }
-  .name-main {
-    //top:
-  }
-}
-
-.intro-content{
-    @include responsive-font(1rem, 10px, false, false);
-}
-
-.name-main {
-    font-family: 'Lato', sans-serif;
-    @include responsive-font(3rem, 28px, false, false);
-    font-weight: bold;
-    color: $high-contrast;
-}
-
-.skills {
-    font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    @include responsive-font(.85rem, 7px, false, false);
-    list-style-type: disc;
-    padding: 0;
-    width: 20%;
-
-    li:first-child{
-        list-style: none;
-    }
-
-}
 
 .info {
     background-image: url("/assets/images/geometry.png");
@@ -162,8 +86,6 @@ $button-hover-color: $brand;
   color: $brand;
 }
 
-
-//this is the body in the description of my skills. Too lazy to change rn
 .skill-description {
   @include responsive-font(.85rem, 8px, 28px, false);
 }
@@ -218,6 +140,11 @@ $button-hover-color: $brand;
   top: 25%;
 }
 
+.bullets {
+  height: 0.3em;
+  width: 0.4em;
+}
+
 .badge {
   display: inline-block;
   height: 5em;
@@ -253,4 +180,88 @@ $button-hover-color: $brand;
 
 .animated {
     visibility: visible !important;
+}
+.intro-content{
+    @include responsive-font(1rem, 10px, false, false);
+}
+
+.name-main {
+    font-family: 'Lato', sans-serif;
+    @include responsive-font(3rem, 28px, false, false);
+    font-weight: bold;
+    color: $high-contrast;
+}
+
+.skills {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    @include responsive-font(.85rem, 7px, false, false);
+    list-style-type: disc;
+    padding: 0;
+    width: 20%;
+}
+
+@media (max-width: 768px) {
+  .cont-box {
+    width: 80%;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .badges {
+    margin-top: 2em;
+  }
+
+  .skill-description {
+    @include responsive-font(1rem, 12px, 16px, false)
+  }
+
+  .branded-button {
+    width: 30%;
+    background-color: $brand;
+    color: $offwhite;
+    @include responsive-font(1rem, 12px, 16px, false);
+    margin-top: 1em;
+    margin-bottom: 6em;
+  }
+
+  .info {
+    margin: auto;
+    text-align: center;
+  }
+
+  .cont-box {
+    width: 70%;
+    margin:auto;
+    position: relative;
+    right: 2em;
+  }
+
+  .head-container {
+    margin-left: 4em;
+  }
+
+  .skills {
+    margin: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .name-container {
+    height: auto;
+    margin-bottom: 10em;
+    padding-top: 10em;
+  }
+
+  .skills {
+    position: relative;
+    right: 1em;
+  }
+
+  .bullets {
+    position: relative;
+    top: 0.2em;
+  }
 }
