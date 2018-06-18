@@ -123,6 +123,7 @@ $button-hover-color: $brand;
 }
 
 .box-head {
+    @include responsive-font(4rem, 12px, 25px, false)
     font-weight: 200;
 
     &:hover {
@@ -263,5 +264,14 @@ $button-hover-color: $brand;
   .bullets {
     position: relative;
     top: 0.2em;
+  }
+
+  .badge {
+    height: 10em;
+    width: 10em;
+    margin: auto;
+    margin-left: 5em;
+    position: relative;
+    right: 1em;
   }
 }
