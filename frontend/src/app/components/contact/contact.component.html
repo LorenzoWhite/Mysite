@@ -1,22 +1,36 @@
-<div class="card-form">
-  <form class="signup">
-    <div class="form-title">Sign Up for our Newsletter!</div>
-    <div class="form-body">
-      <div class="row">
-        <input type="text" placeholder="First Name*">
-        <input type="text" placeholder="Last Name*">
-      </div>
-      <div class="row">
-        <input type="text" placeholder="Email Address*">
-      </div>
-      <div class="row">
-        <input type="text" class="message" placeholder="Message" />
-      </div>
-    </div>
-    <div class="rule"></div>
-    <div class="form-footer">
-      <a>Sign Me Up!<span class="fa fa-thumbs-o-up"></span></a>
-      <a>Not Now!<span class="fa fa-ban"></span></a>
-    </div>
-  </form>
+<div *ngIf="isViewable" class="modal is-active">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Contact</p>
+      <button (click)="closeWindow()" class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <form>
+        <div class="field">
+          <label for="name" class="label">Your name</label>
+          <div class="control">
+            <input type="text" class="input">
+          </div>
+
+        </div>
+        <div class="field">
+          <label for="email" class="label">Email</label>
+          <div class="control">
+            <input type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <label for="message" class="label">message</label>
+          <div class="control">
+            <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+          </div>
+        </div>
+      </form>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Save changes</button>
+      <button class="button">Cancel</button>
+    </footer>
+  </div>
 </div>

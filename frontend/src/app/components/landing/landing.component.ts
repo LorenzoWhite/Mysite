@@ -23,7 +23,11 @@ export class LandingComponent implements OnInit {
   myStyle: object = {};
   myParams: object = {};
 
-
+  //toggle isViewable
+  isViewable = false;
+  toggleView(){
+    this.isViewable = !this.isViewable;
+  }
 
   ngOnInit() {
     this.myParams = {

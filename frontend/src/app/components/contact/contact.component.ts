@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-scss/contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  @Input() isViewable: boolean;
+  @Output() closedWindow = new EventEmitter();
+
+  closeWindow() {
+    this.closedWindow.emit();
+  }
 
   constructor() { }
 

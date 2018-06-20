@@ -266,6 +266,7 @@ $button-hover-color: $brand;
     top: 0.2em;
   }
 
+  //TODO: Odd bug on safari mobile browser that makes badge size not change
   .badge {
     height: 10em;
     width: 10em;

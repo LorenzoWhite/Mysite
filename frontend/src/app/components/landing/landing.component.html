@@ -1,3 +1,4 @@
+<app-contact [isViewable]="isViewable" (closedWindow)="toggleView()"></app-contact>
 <particles [params]="myParams" class="particles"></particles>
 <div class="columns is-gapless no-margin">
   <div class="column is-half">
@@ -34,7 +35,7 @@
               Wanna know more about me? Just keep scrolling!
 
           </p>
-          <button class="button is-outlined branded-button" type="button" name="button">Contact</button>
+          <button (click)="toggleView()" class="button is-outlined branded-button" type="button" name="button">Contact</button>
         </div>
       </section>
     </div>
