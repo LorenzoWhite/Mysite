@@ -2,26 +2,27 @@
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
-      <p class="modal-card-title">Contact</p>
-      <button (click)="closeWindow()" class="delete" aria-label="close"></button>
+      <p class="modal-card-title has-text-centered">Contact</p>
     </header>
     <section class="modal-card-body">
       <form>
+
         <div class="field">
-          <label for="name" class="label">Your name</label>
+          <label for="name" class="label">What's your name?</label>
           <div class="control">
-            <input type="text" class="input">
+            <input type="text" class="input" placeholder="">
           </div>
 
         </div>
         <div class="field">
-          <label for="email" class="label">Email</label>
+          <label for="email" class="label">What's your email?</label>
           <div class="control">
             <input type="text" class="input">
           </div>
         </div>
+        <br />
         <div class="field">
-          <label for="message" class="label">message</label>
+          <label for="message" class="label">What can I do for you?</label>
           <div class="control">
             <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
           </div>
@@ -29,8 +30,8 @@
       </form>
     </section>
     <footer class="modal-card-foot">
-      <button class="button is-success">Save changes</button>
-      <button class="button">Cancel</button>
+      <button class="button is-success">Send</button>
+      <button (click)="closeWindow()" class="button">Cancel</button>
     </footer>
   </div>
 </div>
