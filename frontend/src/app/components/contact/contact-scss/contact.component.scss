@@ -12,6 +12,7 @@ $offblack: hsl(0, 0%, 18%);
 
 .modal-card-title {
   color: $high-contrast;
+  font-weight: 350;
 }
 
 .modal-card-foot {
@@ -35,10 +36,22 @@ $offblack: hsl(0, 0%, 18%);
 
 @media (max-width: 768px) {
   .modal-card {
-    width: 60%;
+    width: 85%;
   }
 
   .modal-card-head {
     height: auto;
+  }
+
+  .label {
+    //font-size: 3rem;
+  }
+
+  .input {
+    //height: 4rem;
+  }
+
+  .modal-card-title {
+    //0font-size: 4rem;
   }
 }
