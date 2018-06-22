@@ -1,7 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NgsRevealConfig } from 'ng-scrollreveal';
-import { Observable } from 'rxjs';
-import { AngularFirestore } from 'angularfire2/firestore';
 
 
 @Component({
