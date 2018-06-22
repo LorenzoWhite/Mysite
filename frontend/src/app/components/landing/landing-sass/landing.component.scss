@@ -12,6 +12,14 @@ $offblack: hsl(0, 0%, 18%);
 $button-color: $brand;
 $button-hover-color: $brand;
 
+.tester {
+  color: $brand;
+}
+.firetest {
+  height: 1000px;
+  background-color: $high-contrast;
+}
+
 .no-pad {
     padding: 0;
     border-radius: 0;

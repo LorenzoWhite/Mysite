@@ -6,31 +6,30 @@
     </header>
     <section class="modal-card-body">
       <form>
-
         <div class="field">
           <label for="name" class="label">What's your name?</label>
           <div class="control">
-            <input type="text" class="input" placeholder="">
+            <input [(ngModel)]="name" name="name" type="text" class="input" placeholder="">
           </div>
 
         </div>
         <div class="field">
           <label for="email" class="label">What's your email?</label>
           <div class="control">
-            <input type="text" class="input">
+            <input [(ngModel)]="email" name="email" type="text" class="input">
           </div>
         </div>
         <br />
         <div class="field">
           <label for="message" class="label">What can I do for you?</label>
           <div class="control">
-            <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+            <textarea [(ngModel)]="message" name="message" id="" cols="30" rows="10" class="textarea"></textarea>
           </div>
         </div>
       </form>
     </section>
     <footer class="modal-card-foot">
-      <button class="button is-success">Send</button>
+      <button (click)="onFormSubmit()"class="button is-success">Send</button>
       <button (click)="closeWindow()" class="button">Cancel</button>
     </footer>
   </div>

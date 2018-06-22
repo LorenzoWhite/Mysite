@@ -124,3 +124,14 @@
       </div>
     </div>
 </section>
+<div class="firetest">
+  <p class="tester">
+    testing shit
+  </p>
+  <ul>
+    <li class="tester" *ngFor="let item of items | async">
+      {{item.name}}
+    </li>
+  </ul>
+  <button (click)="testFunction()"class="button">CLICK FOR TEST NIGGA</button>
+</div>

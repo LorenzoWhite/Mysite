@@ -1,5 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NgsRevealConfig } from 'ng-scrollreveal';
+import { Observable } from 'rxjs';
+import { AngularFirestore } from 'angularfire2/firestore';
 
 
 @Component({
@@ -11,8 +13,11 @@ export class LandingComponent implements OnInit {
   constructor(config: NgsRevealConfig) {
     config.duration = 1000;
     config.viewFactor = 0.3;
-    config.easing = "ease"
+    config.easing = "ease";
   }
+  //contactsCollection = db.collection('Contacts');
+  //itemsCollection = db.collection('items');
+
   //Setup for skill description
   name: string = "Lorenzo White";
 
@@ -22,6 +27,10 @@ export class LandingComponent implements OnInit {
   //setup for particle effects
   myStyle: object = {};
   myParams: object = {};
+
+  testFunction() {
+    //console.log(this.itemsCollection.add({name: "it worked!"}));
+  }
 
   //toggle isViewable
   isViewable = false;
