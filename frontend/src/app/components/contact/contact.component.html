@@ -9,15 +9,22 @@
         <div class="field">
           <label for="name" class="label">What's your name?</label>
           <div class="control">
-            <input [(ngModel)]="name" name="name" type="text" class="input" placeholder="">
+            <input required #nameVal="ngModel"[(ngModel)]="name" name="name" type="text" class="input" placeholder="">
           </div>
 
         </div>
         <div class="field">
           <label for="email" class="label">What's your email?</label>
           <div class="control">
-            <input [(ngModel)]="email" name="email" type="text" class="input">
+            <input email [(ngModel)]="email" name="email" type="text" class="input" #emailVal="ngModel">
           </div>
+
+            <div *ngIf="emailVal.invalid && (emailVal.dirty || emailVal.touched)" class="alert alert-danger">
+              <div *ngIf="emailVal.errors.email">
+                That's not an email
+              </div>
+            </div>
+
         </div>
         <br />
         <div class="field">

@@ -26,10 +26,6 @@ export class LandingComponent implements OnInit {
   myStyle: object = {};
   myParams: object = {};
 
-  testFunction() {
-    //console.log(this.itemsCollection.add({name: "it worked!"}));
-  }
-
   //toggle isViewable
   isViewable = false;
   toggleView(){
