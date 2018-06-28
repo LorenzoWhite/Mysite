@@ -19,11 +19,11 @@
             <input email [(ngModel)]="email" name="email" type="text" class="input" #emailVal="ngModel">
           </div>
 
-            <div *ngIf="emailVal.invalid && (emailVal.dirty || emailVal.touched)" class="alert alert-danger">
-              <div *ngIf="emailVal.errors.email">
+
+              <p class="help is-danger" [ngClass]="{'help is-danger': emailVal.invalid && (emailVal.dirty || emailVal.touched)}">
                 That's not an email
-              </div>
-            </div>
+              </p>
+
 
         </div>
         <br />

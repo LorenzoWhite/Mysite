@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#D291FF;}
-	.st1{fill:#EA77FF;}
-	.st2{fill:#2A0034;}
-	.st3{fill:#1F0040;}
-	.st4{font-family:'OpenSans-Regular';}
-	.st5{font-size:117.4175px;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:#D8A1FF;}
 </style>
-<g id="Layer_1">
+<g id="Layer_1_1_">
 	<title>node</title>
 </g>
-<g id="Layer_2">
-	<circle class="st0" cx="100" cy="100" r="99.3"/>
-	<g id="v1JFf8_1_">
-		
-			<image style="overflow:visible;" width="186" height="186" id="v1JFf8" xlink:href="7692EB826B5A1E95.jpg"  transform="matrix(1.0753 0 0 1.1001 -253.8849 195.5205)">
-		</image>
-	</g>
-	<rect x="-221.8" y="-62.6" class="st1" width="198.5" height="198.5"/>
-	<rect x="-214.4" y="-55.3" class="st2" width="183.8" height="183.8"/>
-	<circle class="st3" cx="100" cy="100" r="91.9"/>
-	<text transform="matrix(1 0 0 1 31.0305 135.8985)" class="st0 st4 st5">Ae</text>
-	<g id="dhrT5l_1_">
-		
-			<image style="overflow:visible;" width="227" height="222" id="dhrT5l" xlink:href="7692EB826B5A1E97.jpg"  transform="matrix(1 0 0 1 253.8849 -50.375)">
-		</image>
-	</g>
-</g>
+<circle class="st0" cx="100" cy="100" r="99.3"/>
+<radialGradient id="SVGID_1_" cx="72.852" cy="76.5206" r="112.9908" fx="68.4293" fy="72.7518" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#442F55;stop-opacity:0.98"/>
+	<stop  offset="1" style="stop-color:#12002C"/>
+</radialGradient>
+<circle class="st1" cx="100" cy="100" r="91.9"/>
+<path class="st2" d="M145.6,100.1c4.5,0,6.1,0,6.5-0.2c0-0.6,0.2-1.1,0.2-1.5c0-4.8-2.3-13.6-11.5-13.6c-8.5,0-12.1,7.4-13,15.3
+	H145.6L145.6,100.1z M127.6,112.2c0.2,11.9,5.8,20,19.3,20c5.2,0,9.7-0.7,14.4-2.7c0.6-0.3,1.1-0.2,1.1,0.6v11.1
+	c0,0.9-0.3,1.3-0.9,1.8c-4.7,2.3-10.5,3.4-17.8,3.4c-23.3,0-32.1-17.2-32.1-36.4c0-20.9,10.8-37.9,29.8-37.9c19.3,0,26,16.2,26,29.4
+	c0,4.2-0.3,7.7-0.7,9.4c-0.2,0.7-0.4,1-1.1,1.1c-1.8,0.3-7,0.6-14.8,0.6h-23.2V112.2z M80.2,103.2c-2.5-9.8-8.5-31.2-10.7-41.6h-0.2
+	C67.5,72,62.6,89.5,59,103.2H80.2z M55.4,117.5l-7,26.4c-0.2,0.7-0.4,1-1.3,1h-13c-0.9,0-1.1-0.3-0.9-1.3l25.1-87.8
+	c0.4-1.6,0.7-2.8,0.9-7.3c0-0.6,0.3-0.9,0.7-0.9h18.6c0.6,0,0.9,0.2,1.1,0.9l28.1,95.3c0.2,0.7,0,1.1-0.7,1.1H92.3
+	c-0.7,0-1.1-0.3-1.3-0.9l-7.3-26.5L55.4,117.5L55.4,117.5z"/>
 </svg>
